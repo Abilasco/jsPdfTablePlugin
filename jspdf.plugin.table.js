@@ -18,7 +18,7 @@ var heights	= [];
 var SplitIndex	= [];
 var cSplitIndex = [];
 var dimensions	= [];
-
+var value, sum, count;
 
 
 var defaultConfig = {
@@ -195,12 +195,12 @@ function insertData(rowCount, columnCount, dimensions, data, brControl) {
 	var end = 0;
 	var obj = {};
 
-	y = dimensions[1] + yOffset;
+	var y = dimensions[1] + yOffset;
 
 	for (var i = 0; i < rowCount; i++) {
 		obj = data[i];
-		x = dimensions[0] + xOffset;
-
+		var x = dimensions[0] + xOffset;
+		var ih;
 		//index for columnWidths
 		var i_col = 0;
 
